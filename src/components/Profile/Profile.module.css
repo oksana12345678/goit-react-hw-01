@@ -2,6 +2,7 @@
   background-color: #fafaff;
   width: 240px;
   margin: 0 auto;
+  margin-top: 40px;
   border: 2px solid #151515;
   color: #151515;
   display: flex;
@@ -60,7 +61,6 @@
   border-right: none;
 }
 .list .listItem:first-child {
- 
   border-bottom-left-radius: 12px;
 }
 
