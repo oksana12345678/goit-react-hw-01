@@ -4,6 +4,8 @@ import "modern-normalize";
 import friends from "./Friends.json";
 import FriendList from "./components/FriendList/FriendList";
 // import Button from "./components/Button/Button";
+import transactions from "./transactions.json";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 export const App = () => {
   return (
@@ -17,6 +19,7 @@ export const App = () => {
       />
       {/* <Button /> */}
       <FriendList friends={friends} />
+      <TransactionHistory transactions={transactions} />
     </>
   );
 };
