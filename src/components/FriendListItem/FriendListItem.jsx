@@ -1,17 +1,12 @@
 import css from "./FriendListItem.module.css";
 import PropTypes from "prop-types";
-export function FriendListItem({ friend }) {
+export function FriendListItem({ friend: { avatar, name, isOnline } }) {
   return (
     <div>
-      <img
-        className={css.avatar}
-        src={friend.avatar}
-        alt="User avatar"
-        width="80"
-      />
-      <p className={css.name}>{friend.name}</p>
-      <p className={friend.isOnline ? css.isOnline : css.isOffline}>
-        {friend.isOnline ? "Online" : "Offline"}
+      <img className={css.avatar} src={avatar} alt="User avatar" width="80" />
+      <p className={css.name}>{name}</p>
+      <p className={isOnline ? css.isOnline : css.isOffline}>
+        {isOnline ? "Online" : "Offline"}
       </p>
     </div>
   );
